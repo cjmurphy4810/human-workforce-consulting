@@ -3,6 +3,15 @@ import type { CaseStudy } from '@/types'
 
 const caseStudies = caseStudiesData as CaseStudy[]
 
+export function generateMetadata({ params }: { params: { slug: string } }) {
+  const study = caseStudies.find((c) => c.slug === params.slug)
+  return {
+    title: study
+      ? `${study.client_name} | The Human Workforce Consulting`
+      : 'Case Story | The Human Workforce Consulting',
+  }
+}
+
 export function generateStaticParams() {
   return caseStudies.map((c) => ({ slug: c.slug }))
 }

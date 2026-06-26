@@ -3,6 +3,15 @@ import type { Service } from '@/types'
 
 const services = servicesData as Service[]
 
+export function generateMetadata({ params }: { params: { slug: string } }) {
+  const service = services.find((s) => s.slug === params.slug)
+  return {
+    title: service
+      ? `${service.title} | The Human Workforce Consulting`
+      : 'Service | The Human Workforce Consulting',
+  }
+}
+
 export function generateStaticParams() {
   return services.map((s) => ({ slug: s.slug }))
 }

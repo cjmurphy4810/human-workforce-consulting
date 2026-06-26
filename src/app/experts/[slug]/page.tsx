@@ -3,6 +3,15 @@ import type { Expert } from '@/types'
 
 const experts = expertsData as Expert[]
 
+export function generateMetadata({ params }: { params: { slug: string } }) {
+  const expert = experts.find((e) => e.id === params.slug)
+  return {
+    title: expert
+      ? `${expert.name} | The Human Workforce Consulting`
+      : 'Expert | The Human Workforce Consulting',
+  }
+}
+
 export function generateStaticParams() {
   return experts.map((e) => ({ slug: e.id }))
 }
