@@ -1,0 +1,57 @@
+[
+  {
+    "id": "eqmu",
+    "name": "Entitlement Quality Monitor",
+    "tagline": "Stop overpaying for software your people don't use.",
+    "description": "Connects to your identity provider, flags entitlement drift in real time, and surfaces remediation actions. Built on FastAPI and Appian. Production-tested for SaaS license recovery.",
+    "live_url": "https://eqm-utility.fly.dev",
+    "github_url": "https://github.com/cjmurphy4810/Entitlement-Quality-Monitor-Utility",
+    "tech_stack": ["Python", "FastAPI", "Appian", "Fly.io"],
+    "status": "live",
+    "category": "Risk"
+  },
+  {
+    "id": "rto",
+    "name": "Resiliency Testing Orchestrator",
+    "tagline": "Run a BCP test without calling a meeting.",
+    "description": "OOR-first business continuity simulator. Define your recovery scope, run a scenario, and get a structured gap report — no consultant required. FastAPI backend with Streamlit UI.",
+    "live_url": "https://rto-ui.fly.dev",
+    "github_url": "https://github.com/cjmurphy4810/Resiliency-Testing-Orchestrator",
+    "tech_stack": ["Python", "FastAPI", "Streamlit", "SQLite", "Fly.io"],
+    "status": "live",
+    "category": "Risk"
+  },
+  {
+    "id": "hwa",
+    "name": "Human Workforce Analytics",
+    "tagline": "Your content strategy, driven by actual channel data.",
+    "description": "Auto-refreshing YouTube analytics dashboard that pulls live metrics every 4 hours via GitHub Actions. Tracks views, watch time, subscriber growth, and top content — no manual exports.",
+    "live_url": "https://human-workforce-analytics-t7y4scc8tntc5ufhoghaw7.streamlit.app",
+    "github_url": "https://github.com/cjmurphy4810/human-workforce-analytics",
+    "tech_stack": ["Python", "Streamlit", "GitHub Actions", "YouTube Data API"],
+    "status": "live",
+    "category": "Workforce"
+  },
+  {
+    "id": "kel",
+    "name": "Knowledge Evolution Layer",
+    "tagline": "Track what your organization knows — before the gap becomes a liability.",
+    "description": "Embeddings-based drift detection that surfaces how institutional knowledge diverges from team behavior over time. Routes queries across local and cloud LLMs based on sensitivity.",
+    "live_url": "https://github.com/cjmurphy4810/knowledge-evolution-layer",
+    "github_url": "https://github.com/cjmurphy4810/knowledge-evolution-layer",
+    "tech_stack": ["Python", "SQLite", "LLM Routing", "Embeddings"],
+    "status": "beta",
+    "category": "Workforce"
+  },
+  {
+    "id": "laymans",
+    "name": "Layman's Spending Assessment",
+    "tagline": "Plain-English answers to 'where is my money going?'",
+    "description": "Local Streamlit app that ingests RocketMoney CSV exports and provides an AI-powered spending dashboard with Claude chat. Distributed as a zip — no cloud dependency, no data leaves your machine.",
+    "live_url": "https://github.com/cjmurphy4810/laymans-spending-assessment",
+    "github_url": "https://github.com/cjmurphy4810/laymans-spending-assessment",
+    "tech_stack": ["Python", "Streamlit", "Claude API", "SQLite"],
+    "status": "beta",
+    "category": "Finance"
+  }
+]

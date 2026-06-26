@@ -1,0 +1,26 @@
+[
+  {
+    "id": "saas-entitlement-recovery",
+    "client_name": "Regional Financial Services Firm",
+    "industry": "Financial Services",
+    "metric_delivered": "Identified 340+ unused software entitlements, projected $180K annual savings",
+    "duration_weeks": 4,
+    "slug": "saas-entitlement-recovery"
+  },
+  {
+    "id": "bcp-automation",
+    "client_name": "Multi-site Operations Company",
+    "industry": "Operations",
+    "metric_delivered": "Reduced BCP test planning time from 3 weeks to 2 days with automated scenario runner",
+    "duration_weeks": 6,
+    "slug": "bcp-automation"
+  },
+  {
+    "id": "ai-governance-framework",
+    "client_name": "Professional Services Organization",
+    "industry": "Professional Services",
+    "metric_delivered": "Delivered AI governance framework and staff training for 200-person workforce in 8 weeks",
+    "duration_weeks": 8,
+    "slug": "ai-governance-framework"
+  }
+]
