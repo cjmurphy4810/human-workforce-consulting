@@ -24,6 +24,8 @@ export default function Nav() {
           </Link>
           <a
             href="https://thehumanworkforce.com/about"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-slate-400 hover:text-white text-sm transition-colors"
           >
             About

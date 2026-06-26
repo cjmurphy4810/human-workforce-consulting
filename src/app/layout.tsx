@@ -15,8 +15,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={GeistSans.className}>
-      <body className="bg-slate-950 text-white">
+    <html lang="en" className={GeistSans.variable}>
+      <body className="bg-slate-950 text-white font-sans">
         <Nav />
         <div className="pt-16">{children}</div>
         <Footer />
