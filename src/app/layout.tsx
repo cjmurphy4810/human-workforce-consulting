@@ -1,5 +1,7 @@
 import type { Metadata } from 'next'
 import { GeistSans } from 'geist/font/sans'
+import Nav from '@/components/Nav'
+import Footer from '@/components/Footer'
 import './globals.css'
 
 export const metadata: Metadata = {
@@ -14,7 +16,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={GeistSans.className}>
-      <body>{children}</body>
+      <body className="bg-slate-950 text-white">
+        <Nav />
+        <div className="pt-16">{children}</div>
+        <Footer />
+      </body>
     </html>
   )
 }
