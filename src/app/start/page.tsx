@@ -9,7 +9,7 @@ export default function StartPage() {
         The intake form is being built. In the meantime, reach out directly.
       </p>
       <a
-        href="mailto:cj@thehumanworkforce.com"
+        href="mailto:info@thehumanworkforce.com"
         className="inline-block px-8 py-4 rounded-lg bg-white text-slate-950 font-semibold hover:bg-slate-100 transition-colors"
       >
         Email Us

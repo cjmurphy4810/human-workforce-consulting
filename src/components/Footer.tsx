@@ -16,7 +16,7 @@ export default function Footer() {
           <Link href="/services" className="hover:text-slate-300 transition-colors">Services</Link>
           <Link href="/pricing" className="hover:text-slate-300 transition-colors">Pricing</Link>
           <a
-            href="mailto:cj@thehumanworkforce.com"
+            href="mailto:info@thehumanworkforce.com"
             className="hover:text-slate-300 transition-colors"
           >
             Contact
