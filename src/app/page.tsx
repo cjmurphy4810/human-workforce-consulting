@@ -46,13 +46,15 @@ export default function Home() {
           For CAIOs, CROs, and COOs who need AI to deliver measurable outcomes —
           not more pilots.
         </p>
-        <Link
-          href="/start"
+        <a
+          href="https://notebooklm.google.com/notebook/99dbc59d-f9ee-437c-943f-659fba82fde7/artifact/e6ff2cec-c358-45c9-82df-2f457adf327b?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_"
+          target="_blank"
+          rel="noopener noreferrer"
           className="inline-flex items-center gap-2 px-8 py-4 rounded-lg bg-white text-slate-950 font-semibold text-base hover:bg-slate-100 transition-colors"
         >
           Start the Assessment
           <ArrowRight size={18} />
-        </Link>
+        </a>
       </section>
 
       {/* Trust Bar */}
@@ -155,13 +157,15 @@ export default function Home() {
         <p className="text-slate-400 mb-8">
           Tell us your role, your existing stack, and what&apos;s stuck. We&apos;ll tell you what&apos;s possible in 6 weeks.
         </p>
-        <Link
-          href="/start"
+        <a
+          href="https://notebooklm.google.com/notebook/99dbc59d-f9ee-437c-943f-659fba82fde7/artifact/e6ff2cec-c358-45c9-82df-2f457adf327b?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_"
+          target="_blank"
+          rel="noopener noreferrer"
           className="inline-flex items-center gap-2 px-8 py-4 rounded-lg bg-white text-slate-950 font-semibold hover:bg-slate-100 transition-colors"
         >
           Start the Assessment
           <ArrowRight size={18} />
-        </Link>
+        </a>
       </section>
     </main>
   )
