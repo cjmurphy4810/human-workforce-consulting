@@ -22,6 +22,12 @@ export default function Nav() {
           >
             Services
           </Link>
+          <Link
+            href="/pricing"
+            className="text-slate-400 hover:text-white text-sm transition-colors"
+          >
+            Pricing
+          </Link>
           <a
             href="https://thehumanworkforce.com/about"
             target="_blank"
@@ -30,12 +36,12 @@ export default function Nav() {
           >
             About
           </a>
-          <Link
-            href="/start"
+          <a
+            href="mailto:info@thehumanworkforce.com?subject=Schedule%20Executive%20Consultation"
             className="px-4 py-2 rounded-lg bg-white text-slate-950 text-sm font-semibold hover:bg-slate-100 transition-colors"
           >
             Book a Call
-          </Link>
+          </a>
         </div>
       </div>
     </nav>

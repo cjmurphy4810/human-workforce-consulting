@@ -1,32 +1,22 @@
 [
   {
-    "id": "cj-murphy",
-    "name": "CJ Murphy",
-    "title": "Founder & Principal, The Human Workforce",
-    "bio": "CJ Murphy is the author of The Agentic Insider and The Last Job You'll Ever Hate. He advises executive teams on building AI-augmented organizations that stay human-centered under pressure.",
-    "credentials": ["Author", "Executive AI Advisor", "Workforce Transformation"],
-    "photo_url": "/images/experts/cj-murphy.jpg",
+    "id": "zachary-djimas",
+    "name": "Zachary Djimas",
+    "title": "Principal Advisor",
+    "bio": "Enterprise technology and operational resilience leader with deep experience in AI governance, workflow automation, and business continuity. Architects and delivers production-ready solutions that integrate AI into enterprise operations without sacrificing auditability or human oversight.",
+    "credentials": ["Enterprise Technology", "Operational Resilience", "AI Governance", "Workflow Automation", "Business Continuity"],
+    "photo_url": "/images/experts/zachary-djimas.jpg",
     "linked_research_ids": [],
     "contact_email": "info@thehumanworkforce.com"
   },
   {
     "id": "han-brandt",
     "name": "Dr. Han Brandt",
-    "title": "Research Partner, The Human Workforce",
-    "bio": "Dr. Han Brandt brings academic rigor to workforce AI research, with a focus on the human behavioral dimensions of automation adoption. He co-develops the firm's evidence base for client engagements.",
-    "credentials": ["PhD", "AI Behavioral Research", "Organizational Psychology"],
+    "title": "Senior Advisor, Strategy & Architecture",
+    "bio": "Enterprise architecture and AI strategy advisor with a focus on digital transformation and organizational readiness. Brings rigorous analytical frameworks to help executive teams make confident decisions about AI adoption, governance, and operating model design.",
+    "credentials": ["AI Strategy", "Enterprise Architecture", "Digital Transformation"],
     "photo_url": "/images/experts/han-brandt.jpg",
     "linked_research_ids": [],
     "contact_email": ""
-  },
-  {
-    "id": "zachary-djimas",
-    "name": "Zachary Djimas",
-    "title": "Technical Lead, The Human Workforce",
-    "bio": "Zachary Djimas architects and ships the AI-powered tools that back every Human Workforce engagement. He translates executive problems into production systems — from entitlement monitoring to resiliency testing.",
-    "credentials": ["AI Implementation", "FastAPI", "Appian", "Next.js"],
-    "photo_url": "/images/experts/zachary-djimas.jpg",
-    "linked_research_ids": [],
-    "contact_email": "zdjimas@gmail.com"
   }
 ]

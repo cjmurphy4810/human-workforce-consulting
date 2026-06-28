@@ -1,28 +1,28 @@
 [
   {
-    "id": "ai-implementation-sprint",
-    "title": "AI Implementation Sprint",
-    "executive_problem_solved": "Your board approved an AI initiative 6 months ago. Nothing has shipped. We take one defined process and deliver a working AI system in 6 weeks.",
-    "technical_stack": ["Claude API", "FastAPI", "Appian", "Next.js"],
-    "roi_metric": "Working production system in 6 weeks, not 6 months",
+    "id": "enterprise-workflow-automation",
+    "title": "Enterprise Workflow Automation",
+    "executive_problem_solved": "Automate business processes with AI, workflow orchestration, governance, and human oversight. We design production-ready operational workflows that integrate AI, automation platforms, business rules, approvals, and compliance controls.",
+    "technical_stack": ["Claude API", "Appian", "FastAPI", "Next.js"],
+    "roi_metric": "Workflow Architecture · AI Integration · Governance Controls · Production Deployment Plan",
     "github_link": "",
-    "slug": "ai-implementation-sprint"
+    "slug": "enterprise-workflow-automation"
   },
   {
     "id": "workforce-risk-assessment",
     "title": "Workforce Risk Assessment",
-    "executive_problem_solved": "Before you automate, you need to know which roles, processes, and entitlements are actually at risk. We map your exposure before your auditor does.",
+    "executive_problem_solved": "Before introducing AI into critical operations, understand where automation creates operational, security, compliance, and workforce risk. We evaluate processes, roles, governance models, and technology landscapes.",
     "technical_stack": ["Entitlement Monitor", "CMDB Analysis", "Risk Scoring"],
-    "roi_metric": "Risk report delivered in 2 weeks, actionable remediation list included",
+    "roi_metric": "Risk Assessment · Automation Opportunity Map · Governance Recommendations · Executive Report",
     "github_link": "https://github.com/cjmurphy4810/Entitlement-Quality-Monitor-Utility",
     "slug": "workforce-risk-assessment"
   },
   {
     "id": "agentic-workflow-design",
     "title": "Agentic Workflow Design",
-    "executive_problem_solved": "You want AI agents handling real work, not demos. We design multi-step agentic workflows with human checkpoints — built for auditability, not just automation.",
+    "executive_problem_solved": "Move beyond isolated AI tools to coordinated enterprise workflows. We design secure, governed multi-agent systems that collaborate across business functions while maintaining transparency, auditability, and human accountability.",
     "technical_stack": ["Claude API", "Multi-agent Orchestration", "Appian"],
-    "roi_metric": "Documented workflow architecture + working prototype in 4 weeks",
+    "roi_metric": "Workflow Blueprint · Agent Architecture · Governance Framework · Working Prototype",
     "github_link": "",
     "slug": "agentic-workflow-design"
   }
