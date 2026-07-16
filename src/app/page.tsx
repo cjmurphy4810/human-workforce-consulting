@@ -47,10 +47,10 @@ export default function Home() {
             <ArrowRight size={18} />
           </a>
           <Link
-            href="/assessment"
+            href="/ai-tools-assessment"
             className="inline-flex items-center gap-2 px-8 py-4 rounded-lg border border-slate-600 text-slate-300 font-semibold text-base hover:border-slate-400 hover:text-white transition-colors"
           >
-            Take the Assessment
+            Get the Free AI Tools Report
             <ArrowRight size={18} />
           </Link>
         </div>
@@ -59,8 +59,33 @@ export default function Home() {
       {/* Trust Bar */}
       <TrustBar />
 
+      {/* Free Assessment */}
+      <section className="border-y border-slate-800 py-20">
+        <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-[1fr_auto] gap-8 items-center">
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-widest text-cyan-300 mb-4">
+              Free AI Tools Assessment
+            </p>
+            <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-4">
+              Find the time drains AI tools can realistically fix first
+            </h2>
+            <p className="text-slate-400 max-w-2xl leading-relaxed">
+              A small-business intake with a sample report, 3-7 quick-win tool recommendations,
+              and a four-day starting plan. Contact information is required to download the report.
+            </p>
+          </div>
+          <Link
+            href="/ai-tools-assessment"
+            className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-lg bg-white text-slate-950 font-semibold hover:bg-slate-100 transition-colors"
+          >
+            Open the Free Assessment
+            <ArrowRight size={18} />
+          </Link>
+        </div>
+      </section>
+
       {/* Services */}
-      <section className="border-y border-slate-800 py-24">
+      <section className="border-b border-slate-800 py-24">
         <div className="max-w-6xl mx-auto px-6">
           <SectionHeader
             eyebrow="Enterprise Consulting Services"
@@ -209,10 +234,10 @@ export default function Home() {
             <ArrowRight size={18} />
           </a>
           <Link
-            href="/pricing"
+            href="/ai-tools-assessment"
             className="inline-flex items-center gap-2 px-8 py-4 rounded-lg border border-slate-600 text-slate-300 font-semibold hover:border-slate-400 hover:text-white transition-colors"
           >
-            View Pricing
+            Download the Free Report
             <ArrowRight size={18} />
           </Link>
         </div>

@@ -11,6 +11,12 @@ export default function Nav() {
 
         <div className="flex items-center gap-8">
           <Link
+            href="/ai-tools-assessment"
+            className="text-slate-400 hover:text-white text-sm transition-colors"
+          >
+            Free Assessment
+          </Link>
+          <Link
             href="/demos"
             className="text-slate-400 hover:text-white text-sm transition-colors"
           >
