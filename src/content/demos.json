@@ -33,6 +33,17 @@
     "category": "Workforce"
   },
   {
+    "id": "cmdb",
+    "name": "CMDB Risk Dashboard",
+    "tagline": "Know which data center outage will actually hurt before it happens.",
+    "description": "Live risk assessment reporting dashboard for data center CMDB assets. Scores infrastructure by exposure, criticality, and control gaps, then ranks assets so risk and ops teams can prioritize remediation instead of reacting to the next outage. Reads live from a deployed FastAPI backend.",
+    "live_url": "https://rto-api.fly.dev/demos/cmdb-risk-dashboard.html",
+    "github_url": "https://github.com/cjmurphy4810/Resiliency-Testing-Orchestrator",
+    "tech_stack": ["HTML", "JavaScript", "FastAPI", "Fly.io"],
+    "status": "live",
+    "category": "Risk"
+  },
+  {
     "id": "kel",
     "name": "Knowledge Evolution Layer",
     "tagline": "Track what your organization knows — before the gap becomes a liability.",
