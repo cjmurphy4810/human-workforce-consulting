@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import {
   ArrowRight,
   FileText,
@@ -9,7 +10,6 @@ import {
   Search,
   Share2,
   Newspaper,
-  Play,
 } from 'lucide-react'
 import SectionHeader from '@/components/SectionHeader'
 import CreatorServicesFaq from '@/components/CreatorServicesFaq'
@@ -169,17 +169,40 @@ export default function CreatorServicesPage() {
             </div>
           </div>
 
-          {/* Avatar video placeholder */}
+          {/* Ad video */}
           <div className="rounded-2xl border border-slate-700 bg-slate-900/80 p-4 shadow-2xl shadow-slate-950/40">
-            <div className="flex aspect-video w-full flex-col items-center justify-center gap-3 rounded-xl border border-dashed border-slate-700 bg-slate-950/70">
-              <div className="flex h-14 w-14 items-center justify-center rounded-full bg-slate-800 border border-slate-700">
-                <Play size={22} className="ml-0.5 text-slate-400" />
-              </div>
-              <p className="text-sm font-medium text-slate-400">Avatar video coming soon</p>
-            </div>
+            <video
+              className="aspect-video w-full rounded-xl border border-slate-700 bg-black"
+              controls
+              preload="metadata"
+              poster="/images/creator-services-ad-poster.jpg"
+            >
+              <source src="/videos/creator-services-ad.mp4" type="video/mp4" />
+            </video>
             <p className="mt-4 text-xs leading-relaxed text-slate-500">
-              A short welcome message walking through how the service works.
+              A short look at The Human Workforce Creator Services.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Watch: Why YouTube Works */}
+      <section className="border-t border-slate-800 py-24">
+        <div className="max-w-4xl mx-auto px-6">
+          <SectionHeader
+            eyebrow="Watch"
+            headline="Why YouTube Works for Your Business"
+            sub="A discussion on YouTube as a marketing channel for professionals — and how Creator Services turns your expertise into content without adding to your week."
+          />
+          <div className="mt-12 rounded-2xl border border-slate-700 bg-slate-900/80 p-4 shadow-2xl shadow-slate-950/40">
+            <video
+              className="aspect-video w-full rounded-xl border border-slate-700 bg-black"
+              controls
+              preload="metadata"
+              poster="/images/creator-services-intro-poster.jpg"
+            >
+              <source src="/videos/creator-services-intro.mp4" type="video/mp4" />
+            </video>
           </div>
         </div>
       </section>
@@ -425,6 +448,40 @@ export default function CreatorServicesPage() {
               numbers, will be published here once they&apos;re in.
             </p>
           </div>
+        </div>
+      </section>
+
+      {/* Download the Deck */}
+      <section className="border-t border-slate-800 py-24">
+        <div className="max-w-3xl mx-auto px-6">
+          <SectionHeader
+            eyebrow="Take It With You"
+            headline="Download the Sales Deck"
+            sub="A one-page rundown of the offer, the pricing, and how it works — easy to forward to a partner or decision-maker."
+          />
+          <a
+            href="/downloads/thwf-creator-services-deck.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-12 block rounded-2xl border border-slate-700 bg-slate-800 overflow-hidden hover:border-slate-500 transition-colors"
+          >
+            <Image
+              src="/images/creator-services-deck-cover.png"
+              alt="The Human Workforce Creator Services — download the sales deck PDF"
+              width={1376}
+              height={768}
+              className="w-full h-auto"
+            />
+            <div className="flex items-center justify-between gap-4 px-6 py-5">
+              <span className="text-white font-semibold text-sm md:text-base">
+                THWF Creator Services — Sales Deck (PDF)
+              </span>
+              <span className="inline-flex items-center gap-2 text-cyan-300 text-sm font-semibold flex-shrink-0">
+                Download
+                <ArrowRight size={16} />
+              </span>
+            </div>
+          </a>
         </div>
       </section>
 
