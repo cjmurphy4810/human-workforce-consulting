@@ -16,15 +16,20 @@ import CreatorServicesFaq from '@/components/CreatorServicesFaq'
 
 const AUDIT_EMAIL =
   'mailto:info@thehumanworkforce.com?subject=Free%20Channel%20Audit'
+const BOOK_START_EMAIL =
+  'mailto:info@thehumanworkforce.com?subject=Start%20My%20Book'
+const BOOK_QUESTION_EMAIL =
+  'mailto:info@thehumanworkforce.com?subject=Question%20About%20Book%20Publishing'
 
 export const metadata = {
-  title: 'The Human Workforce Creator Services | The Human Workforce Consulting',
+  title:
+    'The Human Workforce Creator Services | YouTube Production & Book Publishing',
   description:
-    'A done-for-you AI-powered YouTube and content production service for busy professionals. Scripts, videos, podcasts, Shorts, thumbnails, SEO, and social — reviewed by a human before anything goes live.',
+    'A done-for-you AI-powered YouTube and content production service for busy professionals — scripts, videos, podcasts, Shorts, thumbnails, SEO, and social, reviewed by a human before anything goes live. Also home to CTADMIN Publishing: get your book written, designed, and published on Amazon in 3-6 weeks, starting at $499.',
   openGraph: {
     title: 'The Human Workforce Creator Services',
     description:
-      'You already have the expertise. We turn it into a YouTube channel — scripts, video, podcast, Shorts, thumbnails, SEO, and social, reviewed by a human before anything publishes.',
+      'You already have the expertise. We turn it into a YouTube channel — and, through CTADMIN Publishing, into a published book on Amazon in 3-6 weeks.',
     type: 'website',
   },
 }
@@ -133,6 +138,47 @@ const PRICING_TIERS = [
   },
 ]
 
+const BOOK_VALUE_POINTS = [
+  'A credential that outlasts a résumé line and travels without you',
+  'The strongest form of proof-of-expertise in a sales conversation, a speaking pitch, or a client’s due-diligence search',
+  'A permanent, searchable asset under your name on the largest retail platform in the world',
+  'A brand extension that compounds — it feeds talks, podcasts, content, and referrals for years',
+  'Professional standing: "author of" changes how a room receives you',
+]
+
+const BOOK_FEATURES = [
+  'Paperback, 150–300 pages',
+  'Estimated 3–6 weeks, idea to live listing',
+  'Editorial pass, interior formatting, and print-ready layout',
+  'Title and cover drafts, with options to choose from',
+  'Interactive review via chat, email, or Google Meet',
+  'Free Amazon-issued ISBN included',
+  'You keep all rights — Amazon pays your royalties directly to you',
+]
+
+const BOOK_TIMELINE = [
+  {
+    title: 'Intake',
+    body: 'Send your manuscript or your idea — we start with a structured intake conversation.',
+  },
+  {
+    title: 'Editorial & Structure',
+    body: 'A full editorial pass and interior structuring, so the book reads clean and holds together.',
+  },
+  {
+    title: 'Title & Cover Drafts',
+    body: 'You get title and subtitle options, plus cover design drafts, to choose from.',
+  },
+  {
+    title: 'Review & Approval',
+    body: 'A handful of review rounds by chat, email, or Google Meet, until you approve the final version.',
+  },
+  {
+    title: 'Live on Amazon',
+    body: 'Full upload, metadata, and listing setup — your book goes live, typically 3–6 weeks from the start.',
+  },
+]
+
 export default function CreatorServicesPage() {
   return (
     <main>
@@ -167,6 +213,13 @@ export default function CreatorServicesPage() {
                 See Pricing
               </a>
             </div>
+            <a
+              href="#book-publishing"
+              className="mt-6 inline-flex items-center gap-1 text-xs text-slate-500 hover:text-slate-300 transition-colors"
+            >
+              Also publishing a book? See Book Publishing
+              <ArrowRight size={12} />
+            </a>
           </div>
 
           {/* Ad video */}
@@ -424,6 +477,134 @@ export default function CreatorServicesPage() {
                 </a>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Book Publishing */}
+      <section id="book-publishing" className="border-t border-slate-800 py-24 scroll-mt-16 bg-slate-900/40">
+        <div className="max-w-6xl mx-auto px-6">
+          <SectionHeader
+            eyebrow="CTADMIN Publishing"
+            headline="Publish Your Book on Amazon in 3–6 Weeks"
+            sub="CTADMIN Publishing, the book imprint of The Human Workforce, takes your manuscript or idea to a live, purchasable paperback — for a fixed fee, not a percentage of your time."
+          />
+
+          <div className="mt-12 grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-start">
+            {/* Narrative */}
+            <div className="space-y-8">
+              <p className="text-slate-300 leading-relaxed">
+                Most accomplished professionals have a book in them and never publish it. The
+                blocker was never the ideas — it&apos;s the machinery: editing, formatting,
+                cover design, ISBNs, and Amazon&apos;s publishing platform, plus the sheer
+                number of decisions in between. Traditional publishing means querying agents,
+                long odds, and timelines measured in years — and giving up control and most of
+                the upside. Doing it yourself means learning six unfamiliar disciplines to
+                produce something that still looks self-published.
+              </p>
+
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-widest text-slate-500 mb-3">
+                  What being published actually gets you
+                </p>
+                <ul className="space-y-2">
+                  {BOOK_VALUE_POINTS.map((point) => (
+                    <li key={point} className="flex items-start gap-2 text-sm text-slate-300">
+                      <span className="text-cyan-300 mt-0.5 flex-shrink-0">→</span>
+                      {point}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <p className="text-slate-300 leading-relaxed">
+                This works at this price because the process is built for it. CTADMIN
+                Publishing runs a tight, systematized pipeline where human judgment sits on the
+                decisions that matter — title, structure, cover, voice — and the mechanical
+                work is compressed. It&apos;s roughly 4–6 hours of expert time per book, because
+                the process was engineered to make it 4–6 hours. That&apos;s why a fixed fee
+                under $500 is possible at all, when the traditional path costs thousands of
+                dollars and takes months.
+              </p>
+
+              <p className="text-slate-300 leading-relaxed">
+                Your part: bring the manuscript or the idea, join a handful of review
+                conversations, and approve the final draft, cover, and title. We do the heavy
+                lift on editing, formatting, cover design, and getting it live.
+              </p>
+            </div>
+
+            {/* Pricing card */}
+            <div className="relative flex flex-col rounded-2xl p-8 border bg-slate-800 border-cyan-400">
+              <span className="absolute -top-3 left-6 text-xs font-semibold px-3 py-1 rounded-full bg-cyan-300 text-slate-950">
+                Introductory Rate
+              </span>
+              <p className="text-xs font-semibold uppercase tracking-widest text-slate-400 mb-2">
+                Per Book
+              </p>
+              <div className="flex items-baseline gap-3 mb-1">
+                <span className="text-4xl font-bold text-white">$499</span>
+                <span className="text-lg text-slate-500 line-through">$799</span>
+              </div>
+              <p className="text-emerald-400 text-sm font-semibold mb-6">You save $300</p>
+
+              <ul className="space-y-2 mb-8 flex-1">
+                {BOOK_FEATURES.map((f) => (
+                  <li key={f} className="flex items-start gap-2 text-sm text-slate-300">
+                    <span className="text-emerald-400 mt-0.5 flex-shrink-0">→</span>
+                    {f}
+                  </li>
+                ))}
+              </ul>
+
+              <p className="text-xs text-slate-500 mb-6">
+                Have your own ISBN? +$49 service fee to use it instead of the free Amazon ISBN.
+              </p>
+
+              <div className="flex flex-col gap-3">
+                <a
+                  href={BOOK_START_EMAIL}
+                  className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-lg text-sm font-semibold transition-colors bg-white text-slate-950 hover:bg-slate-100"
+                >
+                  Start Your Book
+                  <ArrowRight size={14} />
+                </a>
+                <a
+                  href={BOOK_QUESTION_EMAIL}
+                  className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-lg text-sm font-semibold transition-colors border border-slate-600 text-slate-300 hover:border-slate-400 hover:text-white"
+                >
+                  Ask a Question
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* Timeline */}
+          <div className="mt-16">
+            <p className="text-xs font-semibold uppercase tracking-widest text-slate-500 mb-6 text-center">
+              Your First Book, Start to Finish
+            </p>
+            <div className="grid gap-5 md:grid-cols-5">
+              {BOOK_TIMELINE.map((step, index) => (
+                <article key={step.title} className="rounded-xl border border-slate-700 bg-slate-900 p-6">
+                  <p className="mb-4 text-xs font-semibold uppercase tracking-widest text-cyan-300">
+                    Step {index + 1}
+                  </p>
+                  <h3 className="text-base font-semibold text-white">{step.title}</h3>
+                  <p className="mt-3 text-sm leading-relaxed text-slate-400">{step.body}</p>
+                </article>
+              ))}
+            </div>
+          </div>
+
+          {/* Ownership callout */}
+          <div className="mt-12 max-w-2xl mx-auto text-center bg-slate-800 border border-slate-700 rounded-2xl px-8 py-10">
+            <p className="text-xl md:text-2xl font-semibold text-white leading-snug">
+              You own the book. You own the rights. Amazon pays your royalties directly to you.
+            </p>
+            <p className="mt-3 text-sm text-slate-400">
+              No rights assignment, no revenue share, no back end.
+            </p>
           </div>
         </div>
       </section>
