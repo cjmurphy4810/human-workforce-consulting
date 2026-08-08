@@ -105,6 +105,20 @@ export default function Home() {
                 </p>
               </Link>
             ))}
+            <Link
+              href="/creator-services"
+              className="bg-slate-800 border border-slate-700 rounded-xl p-6 hover:border-slate-500 transition-colors block"
+            >
+              <p className="text-xs font-semibold uppercase tracking-widest text-cyan-300 mb-2">
+                New
+              </p>
+              <h3 className="text-white font-semibold mb-3">The Human Workforce Creator Services</h3>
+              <p className="text-slate-400 text-sm leading-relaxed">
+                A done-for-you AI-powered YouTube and content production service for busy
+                professionals. Scripts, video, podcast, Shorts, and social — reviewed by a
+                human before anything goes live.
+              </p>
+            </Link>
           </div>
           <div className="text-center mt-10">
             <Link

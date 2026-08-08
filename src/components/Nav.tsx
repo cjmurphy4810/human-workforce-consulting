@@ -29,6 +29,12 @@ export default function Nav() {
             Services
           </Link>
           <Link
+            href="/creator-services"
+            className="text-slate-400 hover:text-white text-sm transition-colors"
+          >
+            Creator Services
+          </Link>
+          <Link
             href="/pricing"
             className="text-slate-400 hover:text-white text-sm transition-colors"
           >
