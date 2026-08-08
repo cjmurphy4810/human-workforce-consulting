@@ -172,15 +172,16 @@ export default function CreatorServicesPage() {
           {/* Ad video */}
           <div className="rounded-2xl border border-slate-700 bg-slate-900/80 p-4 shadow-2xl shadow-slate-950/40">
             <video
-              className="aspect-video w-full rounded-xl border border-slate-700 bg-black"
+              className="aspect-[9/16] w-full max-w-[280px] mx-auto object-cover rounded-xl border border-slate-700 bg-black"
               controls
               preload="metadata"
               poster="/images/creator-services-ad-poster.jpg"
             >
               <source src="/videos/creator-services-ad.mp4" type="video/mp4" />
             </video>
-            <p className="mt-4 text-xs leading-relaxed text-slate-500">
-              A short look at The Human Workforce Creator Services.
+            <p className="mt-4 text-xs leading-relaxed text-slate-500 text-center">
+              A message from the Founder of the Human Workforce and one of the partner
+              consultants, Zachary Djimas.
             </p>
           </div>
         </div>
