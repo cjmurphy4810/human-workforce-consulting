@@ -24,13 +24,13 @@ const BOOK_QUESTION_EMAIL =
 
 export const metadata = {
   title:
-    'The Human Workforce Creator Services | YouTube Production & Book Publishing',
+    'The Human Workforce Creator Services | YouTube, Book Publishing & Website Development',
   description:
-    'A done-for-you AI-powered YouTube and content production service for busy professionals — scripts, videos, podcasts, Shorts, thumbnails, SEO, and social, reviewed by a human before anything goes live. Also home to CTADMIN Publishing: get your book written, designed, and published on Amazon in 3-6 weeks, starting at $997.',
+    'Turn your expertise into a complete digital presence with The Human Workforce. YouTube production, Amazon book publishing, and professional website development for experts, consultants, founders, and businesses.',
   openGraph: {
     title: 'The Human Workforce Creator Services',
     description:
-      'You already have the expertise. We turn it into a YouTube channel — and, through CTADMIN Publishing, into a published book on Amazon in 3-6 weeks.',
+      'You already have the expertise. We turn it into a YouTube channel, a published book on Amazon, and a professional website — all under one roof.',
     type: 'website',
   },
 }
@@ -225,6 +225,143 @@ const BOOK_TIMELINE = [
   },
 ]
 
+const WEBSITE_LAUNCH_EMAIL =
+  'mailto:info@thehumanworkforce.com?subject=Website%20Services%20-%20Launch%20Package'
+const WEBSITE_BUSINESS_EMAIL =
+  'mailto:info@thehumanworkforce.com?subject=Website%20Services%20-%20Business%20Package'
+const WEBSITE_AUTHORITY_EMAIL =
+  'mailto:info@thehumanworkforce.com?subject=Website%20Services%20-%20Authority%20Package'
+const WEBSITE_CUSTOM_EMAIL =
+  'mailto:info@thehumanworkforce.com?subject=Website%20Services%20-%20Custom%20Project'
+const WEBSITE_CARE_EMAIL =
+  'mailto:info@thehumanworkforce.com?subject=Website%20Care%20Inquiry'
+
+const WEBSITE_TIERS = [
+  {
+    name: 'Launch',
+    badge: null as string | null,
+    highlight: false,
+    price: '$499',
+    priceNote: 'One-time',
+    description:
+      'A simple professional presence for individuals or small businesses getting started.',
+    features: [
+      '1–3 professionally designed pages',
+      'Mobile-responsive design',
+      'Contact form',
+      'Domain connection',
+      'SSL setup',
+      'Basic on-page SEO',
+      'Google Analytics setup',
+      'Social media links',
+      'One revision round',
+    ],
+    cta: 'Build My Website',
+    email: WEBSITE_LAUNCH_EMAIL,
+  },
+  {
+    name: 'Business',
+    badge: 'Most Popular' as string | null,
+    highlight: true,
+    price: '$997',
+    priceNote: 'One-time',
+    description:
+      'Everything most professionals and small businesses need to establish a credible online presence.',
+    features: [
+      'Up to 5 professionally designed pages',
+      'Custom branding and layout',
+      'Home, About, Services, Contact, and supporting pages',
+      'Lead capture / contact forms',
+      'Blog capability',
+      'YouTube and social integration',
+      'Basic technical and on-page SEO',
+      'Google Analytics setup',
+      'Mobile optimization',
+      'Domain and SSL configuration',
+      'Two revision rounds',
+    ],
+    cta: 'Build My Website',
+    email: WEBSITE_BUSINESS_EMAIL,
+  },
+  {
+    name: 'Authority',
+    badge: null as string | null,
+    highlight: false,
+    price: '$1,497',
+    priceNote: 'One-time',
+    description:
+      'A complete authority platform built around your expertise, content, book, or professional brand.',
+    features: [
+      'Up to 10 professionally designed pages',
+      'Everything in Business',
+      'Book or Amazon listing integration',
+      'YouTube/video library integration',
+      'Resource and download section',
+      'Newsletter/email capture',
+      'Blog setup',
+      'Enhanced SEO structure',
+      'Conversion-focused calls to action',
+      'Advanced analytics setup',
+      'Three revision rounds',
+    ],
+    cta: 'Build My Authority Site',
+    email: WEBSITE_AUTHORITY_EMAIL,
+  },
+]
+
+const WEBSITE_CARE_TIERS = [
+  {
+    name: 'Website Care',
+    badge: null as string | null,
+    highlight: false,
+    price: '$49',
+    priceNote: '/mo',
+    features: [
+      'Hosting oversight',
+      'Security monitoring',
+      'Backups',
+      'Uptime monitoring',
+      'Software/platform updates where applicable',
+    ],
+  },
+  {
+    name: 'Website Plus',
+    badge: 'Recommended' as string | null,
+    highlight: true,
+    price: '$99',
+    priceNote: '/mo',
+    features: [
+      'Everything in Website Care',
+      'Minor text and image updates',
+      'Basic content changes',
+      'Up to 1 hour of website updates per month',
+      'Priority support',
+    ],
+  },
+  {
+    name: 'Website Growth',
+    badge: null as string | null,
+    highlight: false,
+    price: '$199',
+    priceNote: '/mo',
+    features: [
+      'Everything in Website Plus',
+      'Up to 2 hours of content/page updates per month',
+      'SEO improvements',
+      'Analytics review',
+      'Landing-page or campaign updates',
+      'Content integration from YouTube, books, or Creator Services',
+    ],
+  },
+]
+
+const WEBSITE_VALUE_POINTS = [
+  'One coordinated brand instead of multiple disconnected vendors',
+  'Content designed to drive people back to your website',
+  'Faster production using AI-assisted workflows with human review',
+  'A digital presence that can grow as your business grows',
+]
+
 export default function CreatorServicesPage() {
   return (
     <main>
@@ -239,7 +376,8 @@ export default function CreatorServicesPage() {
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight text-white">
               You Already Have the Expertise.
               <span className="block mt-1 md:mt-2">
-                We Turn It Into a YouTube Channel or a Published Book.
+                We Turn It Into a YouTube Channel, a Published Book, or a Professional Digital
+                Presence.
               </span>
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-relaxed text-slate-300">
@@ -267,6 +405,12 @@ export default function CreatorServicesPage() {
                 className="inline-flex items-center justify-center gap-2 rounded-lg border border-slate-600 px-7 py-4 font-semibold text-slate-300 transition-colors hover:border-slate-400 hover:text-white"
               >
                 See Book Pricing
+              </a>
+              <a
+                href="#website-services"
+                className="inline-flex items-center justify-center gap-2 rounded-lg border border-slate-600 px-7 py-4 font-semibold text-slate-300 transition-colors hover:border-slate-400 hover:text-white"
+              >
+                See Website Pricing
               </a>
             </div>
           </div>
@@ -688,6 +832,197 @@ export default function CreatorServicesPage() {
             <p className="mt-3 text-sm text-slate-400">
               No rights assignment, no revenue share, no back end.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Website Services */}
+      <section id="website-services" className="border-t border-slate-800 py-24 scroll-mt-16">
+        <div className="max-w-6xl mx-auto px-6">
+          <SectionHeader
+            eyebrow="The Human Workforce Website Services"
+            headline="Don't Have a Website Yet? We Can Solve That Too."
+            sub="Your YouTube channel, book, consulting practice, or business needs somewhere to send people. If you don't already have a professional website, we can build that too."
+          />
+
+          <div className="mt-8 max-w-2xl mx-auto text-center space-y-4">
+            <p className="text-slate-300 leading-relaxed">
+              No agency complexity. No months-long development cycle. Just a clean, modern
+              website that presents your expertise, connects your content, and gives
+              prospective clients a professional place to find you.
+            </p>
+            <p className="text-cyan-300 font-semibold text-lg">
+              Professional websites starting at $499.
+            </p>
+            <p className="text-slate-400 text-sm leading-relaxed">
+              Website Services are designed as an affordable extension of our Creator
+              Services — especially for professionals who need a credible digital home for
+              their content, book, services, or personal brand.
+            </p>
+          </div>
+
+          {/* Website pricing tiers */}
+          <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
+            {WEBSITE_TIERS.map((tier) => (
+              <div
+                key={tier.name}
+                className={`relative flex flex-col rounded-2xl p-6 border ${
+                  tier.highlight
+                    ? 'bg-slate-800 border-cyan-400'
+                    : 'bg-slate-800 border-slate-700'
+                }`}
+              >
+                {tier.badge && (
+                  <span className="absolute -top-3 left-6 text-xs font-semibold px-3 py-1 rounded-full bg-cyan-300 text-slate-950">
+                    {tier.badge}
+                  </span>
+                )}
+                <p className="text-xs font-semibold uppercase tracking-widest text-slate-400 mb-2">
+                  {tier.name}
+                </p>
+                <div className="flex items-baseline gap-2 mb-1">
+                  <span className="text-3xl font-bold text-white">{tier.price}</span>
+                  <span className="text-slate-400 text-sm">{tier.priceNote}</span>
+                </div>
+                <p className="text-slate-400 text-sm mb-6 leading-relaxed">{tier.description}</p>
+
+                <ul className="space-y-2 mb-8 flex-1">
+                  {tier.features.map((f) => (
+                    <li key={f} className="flex items-start gap-2 text-sm text-slate-300">
+                      <span className="text-emerald-400 mt-0.5 flex-shrink-0">→</span>
+                      {f}
+                    </li>
+                  ))}
+                </ul>
+
+                <a
+                  href={tier.email}
+                  className={`mt-auto inline-flex items-center justify-center gap-2 px-5 py-3 rounded-lg text-sm font-semibold transition-colors ${
+                    tier.highlight
+                      ? 'bg-white text-slate-950 hover:bg-slate-100'
+                      : 'border border-slate-600 text-slate-300 hover:border-slate-400 hover:text-white'
+                  }`}
+                >
+                  {tier.cta}
+                  <ArrowRight size={14} />
+                </a>
+              </div>
+            ))}
+          </div>
+
+          {/* Custom website callout */}
+          <div className="mt-8 max-w-2xl mx-auto text-center bg-slate-800/50 border border-slate-700/50 rounded-xl px-8 py-8">
+            <p className="text-slate-300 text-sm leading-relaxed mb-4">
+              Need e-commerce, client portals, custom applications, advanced integrations, or
+              something more complex?
+            </p>
+            <p className="text-white font-semibold text-lg">Custom Website Development</p>
+            <p className="text-slate-400 text-sm mb-5">Starting at $2,497</p>
+            <a
+              href={WEBSITE_CUSTOM_EMAIL}
+              className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg border border-slate-600 text-slate-300 text-sm font-semibold hover:border-slate-400 hover:text-white transition-colors"
+            >
+              Discuss a Custom Website
+              <ArrowRight size={14} />
+            </a>
+          </div>
+
+          {/* Website care / maintenance */}
+          <div className="mt-20">
+            <SectionHeader
+              eyebrow="Website Care"
+              headline="Keep It Running Without Thinking About It"
+              sub="Once your site is live, we can keep the technical details off your plate too. Choose simple website care or ongoing content and growth support."
+            />
+            <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-4">
+              {WEBSITE_CARE_TIERS.map((tier) => (
+                <div
+                  key={tier.name}
+                  className={`relative flex flex-col rounded-xl p-5 border ${
+                    tier.highlight
+                      ? 'bg-slate-800 border-cyan-400'
+                      : 'bg-slate-800 border-slate-700'
+                  }`}
+                >
+                  {tier.badge && (
+                    <span className="absolute -top-3 left-5 text-xs font-semibold px-3 py-1 rounded-full bg-cyan-300 text-slate-950">
+                      {tier.badge}
+                    </span>
+                  )}
+                  <p className="text-xs font-semibold uppercase tracking-widest text-slate-400 mb-2">
+                    {tier.name}
+                  </p>
+                  <div className="flex items-baseline gap-1 mb-4">
+                    <span className="text-2xl font-bold text-white">{tier.price}</span>
+                    <span className="text-slate-400 text-sm">{tier.priceNote}</span>
+                  </div>
+                  <ul className="space-y-2">
+                    {tier.features.map((f) => (
+                      <li key={f} className="flex items-start gap-2 text-sm text-slate-300">
+                        <span className="text-emerald-400 mt-0.5 flex-shrink-0">→</span>
+                        {f}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+            <div className="mt-6 text-center">
+              <a
+                href={WEBSITE_CARE_EMAIL}
+                className="inline-flex items-center justify-center gap-2 text-sm text-slate-400 hover:text-white transition-colors"
+              >
+                Ask About Website Care
+                <ArrowRight size={14} />
+              </a>
+            </div>
+          </div>
+
+          {/* Bundle callout */}
+          <div className="mt-16 max-w-2xl mx-auto text-center bg-slate-800 border border-slate-700 rounded-2xl px-8 py-10">
+            <p className="text-xl md:text-2xl font-semibold text-white leading-snug">
+              Already a Creator Services Client?
+            </p>
+            <p className="mt-3 text-slate-300">
+              Basic Website Care is included at no additional charge for active Professional
+              and Premium Creator Services clients.
+            </p>
+            <p className="mt-4 text-sm text-slate-400 leading-relaxed">
+              Your website should work with your content, not become another vendor to
+              manage. We can connect your site, YouTube channel, book, blog, and social
+              content into one coordinated digital presence.
+            </p>
+            <p className="mt-3 text-sm text-slate-500 leading-relaxed">
+              If the client later leaves an eligible Creator Services plan, ongoing Website
+              Care can continue under the standard monthly website-care pricing.
+            </p>
+          </div>
+
+          {/* Positioning / value */}
+          <div className="mt-20">
+            <SectionHeader
+              eyebrow="One Platform"
+              headline="One Brand. One System. One Team."
+              sub="A website by itself is useful. A website connected to your YouTube channel, published book, thought leadership, social content, and consulting services is far more powerful."
+            />
+            <p className="mt-8 text-center text-cyan-300 font-semibold">
+              Website → Book → YouTube → Shorts → Podcast → Blog → Social → Website
+            </p>
+            <p className="mt-4 text-center text-slate-300 max-w-xl mx-auto">
+              The Human Workforce can help build the complete platform around your expertise.
+              You bring the expertise. We build the platform around it.
+            </p>
+            <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-3xl mx-auto">
+              {WEBSITE_VALUE_POINTS.map((point) => (
+                <div
+                  key={point}
+                  className="flex items-start gap-3 bg-slate-800/50 border border-slate-700/50 rounded-xl px-5 py-4"
+                >
+                  <span className="text-emerald-400 font-bold flex-shrink-0">→</span>
+                  <span className="text-slate-300 text-sm">{point}</span>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>

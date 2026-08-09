@@ -67,6 +67,36 @@ const FAQS: FaqItem[] = [
     answer:
       'eBook is included with Create and Authority; hardcover is included with Authority. Books longer than 300 pages are outside this fixed-fee scope and quoted separately.',
   },
+  {
+    question: 'What platform will my website be built on?',
+    answer:
+      'We select the platform based on the project, business needs, and complexity. Most professional sites can be built using modern managed platforms that are fast, secure, easy to maintain, and do not require a custom development team.',
+  },
+  {
+    question: 'Do I own my website?',
+    answer:
+      'Yes. The website is built for you. Domain ownership, business content, branding, and client-facing assets remain yours. Any third-party hosting, platform, domain, or subscription fees are disclosed before launch.',
+  },
+  {
+    question: 'Are hosting and domain fees included?',
+    answer:
+      'The website-development price covers the design, setup, configuration, and launch work described in your package. Domain registration, premium platform subscriptions, paid plugins, or third-party hosting fees are separate unless specifically included in your proposal.',
+  },
+  {
+    question: 'How long does a website take to build?',
+    answer:
+      'A typical Launch or Business website can usually be completed within approximately 1–3 weeks once required content, branding, and approvals are available. Larger Authority or custom sites may take longer depending on complexity and integrations.',
+  },
+  {
+    question: 'Can you connect my website to my YouTube channel or book?',
+    answer:
+      'Yes. That is one of the primary reasons Website Services exists. We can integrate YouTube videos, podcasts, Amazon book listings, lead-generation forms, downloadable resources, blog content, and other Creator Services assets into the website.',
+  },
+  {
+    question: 'Can I use Website Services without subscribing to Creator Services?',
+    answer:
+      'Yes. Website development and Website Care can be purchased independently. Active Professional and Premium Creator Services clients receive basic Website Care as an included benefit.',
+  },
 ]
 
 export default function CreatorServicesFaq() {
