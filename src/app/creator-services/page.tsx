@@ -191,14 +191,16 @@ export default function CreatorServicesPage() {
               The Human Workforce Creator Services
             </p>
             <h1 className="text-4xl font-bold leading-tight text-white md:text-6xl">
-              You Already Have the Expertise. We Turn It Into a YouTube Channel.
+              You Already Have the Expertise. We Turn It Into a YouTube Channel — Or a
+              Published Book.
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-relaxed text-slate-300">
-              Send us your ideas. We handle the scripts, the videos, the podcast, the Shorts,
-              the thumbnails, the SEO, and the social posts — reviewed by a human before
-              anything goes live. You spend 10 minutes a week. Your channel grows every week.
+              Send us your ideas. We turn them into a YouTube channel — scripts, videos,
+              podcast, Shorts, thumbnails, SEO, and social — or a published paperback on
+              Amazon in 3–6 weeks. Reviewed by a human before anything goes live. You spend
+              minutes, not months.
             </p>
-            <div className="mt-10 flex flex-col gap-3 sm:flex-row">
+            <div className="mt-10 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
               <a
                 href={AUDIT_EMAIL}
                 className="inline-flex items-center justify-center gap-2 rounded-lg bg-white px-7 py-4 font-semibold text-slate-950 transition-colors hover:bg-slate-100"
@@ -210,16 +212,15 @@ export default function CreatorServicesPage() {
                 href="#pricing"
                 className="inline-flex items-center justify-center gap-2 rounded-lg border border-slate-600 px-7 py-4 font-semibold text-slate-300 transition-colors hover:border-slate-400 hover:text-white"
               >
-                See Pricing
+                See YouTube Pricing
+              </a>
+              <a
+                href="#book-publishing"
+                className="inline-flex items-center justify-center gap-2 rounded-lg border border-slate-600 px-7 py-4 font-semibold text-slate-300 transition-colors hover:border-slate-400 hover:text-white"
+              >
+                See Book Pricing
               </a>
             </div>
-            <a
-              href="#book-publishing"
-              className="mt-6 inline-flex items-center gap-1 text-xs text-slate-500 hover:text-slate-300 transition-colors"
-            >
-              Also publishing a book? See Book Publishing
-              <ArrowRight size={12} />
-            </a>
           </div>
 
           {/* Ad video */}
