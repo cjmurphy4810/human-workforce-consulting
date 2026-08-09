@@ -236,9 +236,11 @@ export default function CreatorServicesPage() {
             <p className="mb-5 text-xs font-semibold uppercase tracking-widest text-cyan-300">
               The Human Workforce Creator Services
             </p>
-            <h1 className="text-4xl font-bold leading-tight text-white md:text-6xl">
-              You Already Have the Expertise. We Turn It Into a YouTube Channel — Or a
-              Published Book.
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight text-white">
+              You Already Have the Expertise.
+              <span className="block mt-1 md:mt-2">
+                We Turn It Into a YouTube Channel or a Published Book.
+              </span>
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-relaxed text-slate-300">
               Send us your ideas. We turn them into a YouTube channel — scripts, videos,
