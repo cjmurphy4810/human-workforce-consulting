@@ -54,6 +54,18 @@ export default function Nav() {
           >
             Book a Call
           </a>
+          <a
+            href="mailto:info@thehumanworkforce.com?subject=Schedule%20Executive%20Consultation"
+            className="px-4 py-2 rounded-lg border border-slate-700 text-white text-sm font-semibold hover:border-slate-500 hover:bg-slate-900 transition-colors"
+          >
+            Book a Call via Email
+          </a>
+          <a
+            href="tel:+14809198843"
+            className="px-4 py-2 rounded-lg border border-slate-700 text-white text-sm font-semibold hover:border-slate-500 hover:bg-slate-900 transition-colors"
+          >
+            Book a Call via Phone
+          </a>
         </div>
       </div>
     </nav>
