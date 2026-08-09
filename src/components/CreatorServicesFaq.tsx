@@ -35,7 +35,12 @@ const FAQS: FaqItem[] = [
   {
     question: "What if I only have an idea, not a finished manuscript, for my book?",
     answer:
-      "That's fine — many authors start there. We'll work with you through structure and content development before the editorial pass begins.",
+      "That's fine — many authors start there. That's the Create package: structured interviews and a full ghostwriting process turn your expertise into a manuscript before the editorial pass begins.",
+  },
+  {
+    question: 'Which book package is right for me?',
+    answer:
+      "If you already have a complete manuscript, start with Publish. If you have the expertise but haven't written the book yet, Create is built for that — we extract and structure it with you through interviews. Authority adds a full launch and content package on top of Create, tied into Creator Services. Not sure? Ask a question and we'll point you to the right one.",
   },
   {
     question: 'Who owns the rights to my book?',
@@ -60,7 +65,7 @@ const FAQS: FaqItem[] = [
   {
     question: 'What if my book is longer than 300 pages, or I want hardcover or ebook formats?',
     answer:
-      "That's outside this fixed-fee scope — longer manuscripts and additional formats are quoted separately.",
+      'eBook is included with Create and Authority; hardcover is included with Authority. Books longer than 300 pages are outside this fixed-fee scope and quoted separately.',
   },
 ]
 

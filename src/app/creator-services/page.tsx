@@ -10,6 +10,7 @@ import {
   Search,
   Share2,
   Newspaper,
+  Info,
 } from 'lucide-react'
 import SectionHeader from '@/components/SectionHeader'
 import CreatorServicesFaq from '@/components/CreatorServicesFaq'
@@ -25,7 +26,7 @@ export const metadata = {
   title:
     'The Human Workforce Creator Services | YouTube Production & Book Publishing',
   description:
-    'A done-for-you AI-powered YouTube and content production service for busy professionals — scripts, videos, podcasts, Shorts, thumbnails, SEO, and social, reviewed by a human before anything goes live. Also home to CTADMIN Publishing: get your book written, designed, and published on Amazon in 3-6 weeks, starting at $499.',
+    'A done-for-you AI-powered YouTube and content production service for busy professionals — scripts, videos, podcasts, Shorts, thumbnails, SEO, and social, reviewed by a human before anything goes live. Also home to CTADMIN Publishing: get your book written, designed, and published on Amazon in 3-6 weeks, starting at $997.',
   openGraph: {
     title: 'The Human Workforce Creator Services',
     description:
@@ -146,14 +147,59 @@ const BOOK_VALUE_POINTS = [
   'Professional standing: "author of" changes how a room receives you',
 ]
 
-const BOOK_FEATURES = [
-  'Paperback, 150–300 pages',
-  'Estimated 3–6 weeks, idea to live listing',
-  'Editorial pass, interior formatting, and print-ready layout',
-  'Title and cover drafts, with options to choose from',
-  'Interactive review via chat, email, or Google Meet',
-  'Free Amazon-issued ISBN included',
-  'You keep all rights — Amazon pays your royalties directly to you',
+const BOOK_TIERS = [
+  {
+    name: 'Publish',
+    whoFor: 'You already have a manuscript',
+    badge: 'Founding Author Rate',
+    highlight: false,
+    price: '$499',
+    originalPrice: '$997',
+    priceNote: 'First 10 authors — then $997, one-time',
+    features: [
+      'Editorial pass & professional polish',
+      'Interior formatting & print-ready layout',
+      'Title & cover design drafts to choose from',
+      'Full Amazon KDP setup & publishing',
+      'Free Amazon-issued ISBN (or +$49 for your own)',
+      'Paperback, 150–300 pages',
+    ],
+  },
+  {
+    name: 'Create',
+    whoFor: 'You have the expertise, not yet the manuscript',
+    badge: 'Most Popular',
+    highlight: true,
+    price: '$2,497',
+    originalPrice: null,
+    priceNote: 'One-time, per book',
+    features: [
+      'Everything in Publish',
+      '2–3 structured interviews to extract your expertise',
+      'Full ghostwriting — idea to professionally structured manuscript',
+      'Defined thesis, structure, and chapter outline',
+      'eBook edition included',
+      'Author bio & Amazon author page support',
+    ],
+  },
+  {
+    name: 'Authority',
+    whoFor: 'Turn your book into your personal brand',
+    badge: null,
+    highlight: false,
+    price: '$4,997',
+    originalPrice: null,
+    priceNote: 'One-time, per book',
+    features: [
+      'Everything in Create',
+      '4–6 structured interviews',
+      'Hardcover edition included',
+      'Premium cover design',
+      'Launch strategy & promotional creative',
+      'Social content package pulled from your book',
+      'Ties directly into Creator Services — YouTube, podcast, Shorts',
+    ],
+  },
 ]
 
 const BOOK_TIMELINE = [
@@ -488,96 +534,130 @@ export default function CreatorServicesPage() {
           <SectionHeader
             eyebrow="CTADMIN Publishing"
             headline="Publish Your Book on Amazon in 3–6 Weeks"
-            sub="CTADMIN Publishing, the book imprint of The Human Workforce, takes your manuscript or idea to a live, purchasable paperback — for a fixed fee, not a percentage of your time."
+            sub="CTADMIN Publishing, the book imprint of The Human Workforce, takes your manuscript — or your expertise and a strong idea — to a live, purchasable paperback on Amazon. What you're starting with determines which package fits."
           />
 
-          <div className="mt-12 grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-start">
-            {/* Narrative */}
-            <div className="space-y-8">
-              <p className="text-slate-300 leading-relaxed">
-                Most accomplished professionals have a book in them and never publish it. The
-                blocker was never the ideas — it&apos;s the machinery: editing, formatting,
-                cover design, ISBNs, and Amazon&apos;s publishing platform, plus the sheer
-                number of decisions in between. Traditional publishing means querying agents,
-                long odds, and timelines measured in years — and giving up control and most of
-                the upside. Doing it yourself means learning six unfamiliar disciplines to
-                produce something that still looks self-published.
+          {/* Narrative */}
+          <div className="mt-12 grid gap-6 md:grid-cols-2 max-w-4xl mx-auto">
+            <p className="text-slate-300 leading-relaxed">
+              Most accomplished professionals have a book in them and never publish it. The
+              blocker was never the ideas — it&apos;s the machinery: editing, formatting,
+              cover design, ISBNs, and Amazon&apos;s publishing platform, plus the sheer
+              number of decisions in between. Traditional publishing means querying agents,
+              long odds, and timelines measured in years — and giving up control and most of
+              the upside. Doing it yourself means learning six unfamiliar disciplines to
+              produce something that still looks self-published.
+            </p>
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-widest text-slate-500 mb-3">
+                What being published actually gets you
               </p>
-
-              <div>
-                <p className="text-xs font-semibold uppercase tracking-widest text-slate-500 mb-3">
-                  What being published actually gets you
-                </p>
-                <ul className="space-y-2">
-                  {BOOK_VALUE_POINTS.map((point) => (
-                    <li key={point} className="flex items-start gap-2 text-sm text-slate-300">
-                      <span className="text-cyan-300 mt-0.5 flex-shrink-0">→</span>
-                      {point}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              <p className="text-slate-300 leading-relaxed">
-                This works at this price because the process is built for it. CTADMIN
-                Publishing runs a tight, systematized pipeline where human judgment sits on the
-                decisions that matter — title, structure, cover, voice — and the mechanical
-                work is compressed. It&apos;s roughly 4–6 hours of expert time per book, because
-                the process was engineered to make it 4–6 hours. That&apos;s why a fixed fee
-                under $500 is possible at all, when the traditional path costs thousands of
-                dollars and takes months.
-              </p>
-
-              <p className="text-slate-300 leading-relaxed">
-                Your part: bring the manuscript or the idea, join a handful of review
-                conversations, and approve the final draft, cover, and title. We do the heavy
-                lift on editing, formatting, cover design, and getting it live.
-              </p>
-            </div>
-
-            {/* Pricing card */}
-            <div className="relative flex flex-col rounded-2xl p-8 border bg-slate-800 border-cyan-400">
-              <span className="absolute -top-3 left-6 text-xs font-semibold px-3 py-1 rounded-full bg-cyan-300 text-slate-950">
-                Introductory Rate
-              </span>
-              <p className="text-xs font-semibold uppercase tracking-widest text-slate-400 mb-2">
-                Per Book
-              </p>
-              <div className="flex items-baseline gap-3 mb-1">
-                <span className="text-4xl font-bold text-white">$499</span>
-                <span className="text-lg text-slate-500 line-through">$799</span>
-              </div>
-              <p className="text-emerald-400 text-sm font-semibold mb-6">You save $300</p>
-
-              <ul className="space-y-2 mb-8 flex-1">
-                {BOOK_FEATURES.map((f) => (
-                  <li key={f} className="flex items-start gap-2 text-sm text-slate-300">
-                    <span className="text-emerald-400 mt-0.5 flex-shrink-0">→</span>
-                    {f}
+              <ul className="space-y-2">
+                {BOOK_VALUE_POINTS.map((point) => (
+                  <li key={point} className="flex items-start gap-2 text-sm text-slate-300">
+                    <span className="text-cyan-300 mt-0.5 flex-shrink-0">→</span>
+                    {point}
                   </li>
                 ))}
               </ul>
+            </div>
+            <p className="text-slate-300 leading-relaxed">
+              The effort involved changes a lot depending on where your material starts. A
+              finished manuscript mainly needs editing, formatting, and design. An idea needs
+              interviews, structure, and a full ghostwritten draft before any of that even
+              begins. CTADMIN Publishing runs a tight, systematized pipeline where human
+              judgment sits on the decisions that matter — title, structure, cover, voice —
+              while AI compresses the mechanical work. That&apos;s how professional book
+              production here starts at a fraction of traditional ghostwriting rates, which
+              commonly run $20,000–$100,000+ for a fully done-for-you book, scaled to how much
+              building your book actually needs.
+            </p>
+            <p className="text-slate-300 leading-relaxed">
+              What you bring determines where you start: a manuscript puts you in Publish;
+              expertise and a strong idea, with no manuscript yet, puts you in Create or
+              Authority. Either way, your part is the same — join a handful of review
+              conversations and approve the final draft, cover, and title. We do the heavy
+              lift on the rest.
+            </p>
+          </div>
 
-              <p className="text-xs text-slate-500 mb-6">
-                Have your own ISBN? +$49 service fee to use it instead of the free Amazon ISBN.
-              </p>
+          {/* Pricing tiers */}
+          <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-6">
+            {BOOK_TIERS.map((tier) => (
+              <div
+                key={tier.name}
+                className={`relative flex flex-col rounded-2xl p-6 border ${
+                  tier.highlight
+                    ? 'bg-slate-800 border-cyan-400'
+                    : 'bg-slate-800 border-slate-700'
+                }`}
+              >
+                {tier.badge && (
+                  <span className="absolute -top-3 left-6 text-xs font-semibold px-3 py-1 rounded-full bg-cyan-300 text-slate-950">
+                    {tier.badge}
+                  </span>
+                )}
+                <p className="text-xs font-semibold uppercase tracking-widest text-slate-400 mb-2">
+                  {tier.name}
+                </p>
+                <p className="text-sm text-slate-400 mb-4">{tier.whoFor}</p>
 
-              <div className="flex flex-col gap-3">
+                <div className="flex items-baseline gap-3 mb-1">
+                  <span className="text-3xl font-bold text-white">{tier.price}</span>
+                  {tier.originalPrice && (
+                    <span className="text-base text-slate-500 line-through">
+                      {tier.originalPrice}
+                    </span>
+                  )}
+                </div>
+                <p className="text-xs text-slate-500 mb-6">{tier.priceNote}</p>
+
+                <ul className="space-y-2 mb-8 flex-1">
+                  {tier.features.map((f) => (
+                    <li key={f} className="flex items-start gap-2 text-sm text-slate-300">
+                      <span className="text-emerald-400 mt-0.5 flex-shrink-0">→</span>
+                      {f}
+                    </li>
+                  ))}
+                </ul>
+
                 <a
                   href={BOOK_START_EMAIL}
-                  className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-lg text-sm font-semibold transition-colors bg-white text-slate-950 hover:bg-slate-100"
+                  className={`mt-auto inline-flex items-center justify-center gap-2 px-5 py-3 rounded-lg text-sm font-semibold transition-colors ${
+                    tier.highlight
+                      ? 'bg-white text-slate-950 hover:bg-slate-100'
+                      : 'border border-slate-600 text-slate-300 hover:border-slate-400 hover:text-white'
+                  }`}
                 >
                   Start Your Book
                   <ArrowRight size={14} />
                 </a>
-                <a
-                  href={BOOK_QUESTION_EMAIL}
-                  className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-lg text-sm font-semibold transition-colors border border-slate-600 text-slate-300 hover:border-slate-400 hover:text-white"
-                >
-                  Ask a Question
-                </a>
               </div>
-            </div>
+            ))}
+          </div>
+
+          <div className="mt-6 text-center">
+            <a
+              href={BOOK_QUESTION_EMAIL}
+              className="inline-flex items-center justify-center gap-2 text-sm text-slate-400 hover:text-white transition-colors"
+            >
+              Not sure which one fits? Ask a Question
+              <ArrowRight size={14} />
+            </a>
+          </div>
+
+          {/* Pricing disclaimer */}
+          <div className="mt-10 max-w-3xl mx-auto flex items-start gap-3 bg-amber-950 border border-amber-800 rounded-xl px-5 py-4">
+            <Info size={18} className="text-amber-400 mt-0.5 flex-shrink-0" aria-hidden="true" />
+            <p className="text-sm text-amber-100/90 leading-relaxed">
+              <span className="font-semibold text-amber-300">A note on final pricing:</span> the
+              packages above are starting points, not fixed quotes. Final pricing is agreed
+              after a short intake conversation and depends on where your material actually
+              stands — a manuscript that&apos;s basically ready to edit and publish is a very
+              different project from a set of ideas, notes, or white papers that still need
+              structure, a defined audience, and a consistent tone. We&apos;ll tell you exactly
+              where you land before you commit to anything.
+            </p>
           </div>
 
           {/* Timeline */}
