@@ -1057,7 +1057,7 @@ export default function CreatorServicesPage() {
           <SectionHeader
             eyebrow="Take It With You"
             headline="Download the Sales Deck"
-            sub="A one-page rundown of the offer, the pricing, and how it works — easy to forward to a partner or decision-maker."
+            sub="A complete rundown of YouTube Creator Services, CTADMIN Publishing, and Website Services — pricing and all — easy to forward to a partner or decision-maker."
           />
           <a
             href="/downloads/thwf-creator-services-deck.pdf"
