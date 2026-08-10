@@ -8,7 +8,8 @@
     "github_url": "https://github.com/cjmurphy4810/Entitlement-Quality-Monitor-Utility",
     "tech_stack": ["Python", "FastAPI", "Appian", "Fly.io"],
     "status": "live",
-    "category": "Risk"
+    "category": "Risk",
+    "screenshot_url": "/images/demo-screenshots/eqmu.png"
   },
   {
     "id": "rto",
@@ -30,7 +31,8 @@
     "github_url": "https://github.com/cjmurphy4810/human-workforce-analytics",
     "tech_stack": ["Python", "Streamlit", "GitHub Actions", "YouTube Data API"],
     "status": "live",
-    "category": "Workforce"
+    "category": "Workforce",
+    "screenshot_url": "/images/demo-screenshots/hwa.png"
   },
   {
     "id": "cmdb",
@@ -41,7 +43,8 @@
     "github_url": "https://github.com/cjmurphy4810/Resiliency-Testing-Orchestrator",
     "tech_stack": ["HTML", "JavaScript", "FastAPI", "Fly.io"],
     "status": "live",
-    "category": "Risk"
+    "category": "Risk",
+    "screenshot_url": "/images/demo-screenshots/cmdb.png"
   },
   {
     "id": "kel",
@@ -52,7 +55,8 @@
     "github_url": "https://github.com/cjmurphy4810/knowledge-evolution-layer",
     "tech_stack": ["Python", "SQLite", "LLM Routing", "Embeddings"],
     "status": "beta",
-    "category": "Workforce"
+    "category": "Workforce",
+    "screenshot_url": "/images/demo-screenshots/kel.png"
   },
   {
     "id": "laymans",
@@ -63,6 +67,7 @@
     "github_url": "https://github.com/cjmurphy4810/laymans-spending-assessment",
     "tech_stack": ["Python", "Streamlit", "Claude API", "SQLite"],
     "status": "beta",
-    "category": "Finance"
+    "category": "Finance",
+    "screenshot_url": "/images/demo-screenshots/laymans.png"
   }
 ]

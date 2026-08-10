@@ -8,6 +8,7 @@ export interface Demo {
   tech_stack: string[]
   status: 'live' | 'beta' | 'coming_soon'
   category: string
+  screenshot_url?: string
 }
 
 export interface Expert {
