@@ -20,7 +20,8 @@
     "github_url": "https://github.com/cjmurphy4810/Resiliency-Testing-Orchestrator",
     "tech_stack": ["Python", "FastAPI", "Streamlit", "SQLite", "Fly.io"],
     "status": "live",
-    "category": "Risk"
+    "category": "Risk",
+    "screenshot_url": "/images/demo-screenshots/rto.png"
   },
   {
     "id": "hwa",
