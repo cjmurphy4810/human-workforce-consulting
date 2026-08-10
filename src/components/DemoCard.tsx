@@ -49,8 +49,6 @@ export default function DemoCard({ demo }: DemoCardProps) {
       {demo.screenshot_url && (
         <a
           href={demo.screenshot_url}
-          target="_blank"
-          rel="noopener noreferrer"
           className="flex items-center justify-center gap-2 w-full py-2.5 mb-2 rounded-lg border border-slate-600 text-slate-200 text-sm font-semibold hover:border-slate-500 hover:bg-slate-700 transition-colors"
         >
           View Screenshots
