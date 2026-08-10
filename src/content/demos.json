@@ -69,5 +69,17 @@
     "status": "beta",
     "category": "Finance",
     "screenshot_url": "/images/demo-screenshots/laymans.png"
+  },
+  {
+    "id": "pbl-evaluator",
+    "name": "PBL Evaluator",
+    "tagline": "Score the plain business language behind every entitlement.",
+    "description": "Lets managers evaluate the quality of an entitlement's plain business language and RBAC design before it ships, catching vague remediation steps and inconsistent access rules before they become audit findings.",
+    "live_url": "https://pbl-evaluator.fly.dev/entitlements",
+    "github_url": "https://github.com/cjmurphy4810/Demo-PBL-Evaluator",
+    "tech_stack": ["Python", "FastAPI", "Fly.io"],
+    "status": "live",
+    "category": "Risk",
+    "screenshot_url": "/images/demo-screenshots/pbl-evaluator.png"
   }
 ]
