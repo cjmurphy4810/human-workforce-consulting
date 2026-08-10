@@ -26,7 +26,7 @@ export default function Nav() {
             href="/services"
             className="text-slate-400 hover:text-white text-sm transition-colors"
           >
-            Services
+            Enterprise Consulting
           </Link>
           <Link
             href="/creator-services"
@@ -47,12 +47,6 @@ export default function Nav() {
             className="text-slate-400 hover:text-white text-sm transition-colors"
           >
             About
-          </a>
-          <a
-            href="mailto:info@thehumanworkforce.com?subject=Schedule%20Executive%20Consultation"
-            className="px-4 py-2 rounded-lg bg-white text-slate-950 text-sm font-semibold hover:bg-slate-100 transition-colors"
-          >
-            Book a Call
           </a>
           <a
             href="mailto:info@thehumanworkforce.com?subject=Schedule%20Executive%20Consultation"
