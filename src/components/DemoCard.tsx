@@ -56,15 +56,24 @@ export default function DemoCard({ demo }: DemoCardProps) {
         </a>
       )}
 
-      <a
-        href={demo.live_url}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="flex items-center justify-center gap-2 w-full py-2.5 rounded-lg bg-white text-slate-950 text-sm font-semibold hover:bg-slate-100 transition-colors"
-      >
-        Open Demo
-        <ExternalLink size={14} />
-      </a>
+      {demo.status === 'beta' ? (
+        <a
+          href={`mailto:Info@thehumanworkforce.com?subject=${encodeURIComponent(`Demo Request: ${demo.name}`)}`}
+          className="flex items-center justify-center gap-2 w-full py-2.5 rounded-lg bg-white text-slate-950 text-sm font-semibold hover:bg-slate-100 transition-colors"
+        >
+          Call for Demo
+        </a>
+      ) : (
+        <a
+          href={demo.live_url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center justify-center gap-2 w-full py-2.5 rounded-lg bg-white text-slate-950 text-sm font-semibold hover:bg-slate-100 transition-colors"
+        >
+          Open Demo
+          <ExternalLink size={14} />
+        </a>
+      )}
     </div>
   )
 }
