@@ -48,6 +48,17 @@
     "screenshot_url": "/images/demo-screenshots/cmdb.png"
   },
   {
+    "id": "srad",
+    "name": "Service Risk & Availability Dashboard",
+    "tagline": "See every service a third party touches — and every gap in it.",
+    "description": "Bottom-up view of the services a third party provides across data center clients, mapped to the gaps in each one. Surfaces and ranks remediation priorities so risk teams can act on the weakest links first instead of reviewing services in isolation.",
+    "live_url": "https://rto-api.fly.dev/demos/cmdb-risk-dashboard.html",
+    "github_url": "https://github.com/cjmurphy4810/Resiliency-Testing-Orchestrator",
+    "tech_stack": ["HTML", "JavaScript", "FastAPI", "Fly.io"],
+    "status": "live",
+    "category": "Risk"
+  },
+  {
     "id": "kel",
     "name": "Knowledge Evolution Layer",
     "tagline": "Track what your organization knows — before the gap becomes a liability.",
