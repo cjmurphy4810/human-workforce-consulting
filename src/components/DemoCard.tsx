@@ -20,15 +20,17 @@ export default function DemoCard({ demo }: DemoCardProps) {
         <span className={`text-xs font-semibold px-2 py-1 rounded-full ${badge.className}`}>
           {badge.label}
         </span>
-        <a
-          href={demo.github_url}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-slate-500 hover:text-slate-300 transition-colors"
-          aria-label={`View ${demo.name} on GitHub`}
-        >
-          <Code size={18} />
-        </a>
+        {!demo.download_url && demo.github_url && (
+          <a
+            href={demo.github_url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-slate-500 hover:text-slate-300 transition-colors"
+            aria-label={`View ${demo.name} on GitHub`}
+          >
+            <Code size={18} />
+          </a>
+        )}
       </div>
 
       <h3 className="text-white font-semibold text-lg mb-1">{demo.name}</h3>
@@ -46,7 +48,7 @@ export default function DemoCard({ demo }: DemoCardProps) {
         ))}
       </div>
 
-      {demo.screenshot_url && (
+      {!demo.download_url && demo.screenshot_url && (
         <a
           href={demo.screenshot_url}
           className="flex items-center justify-center gap-2 w-full py-2.5 mb-2 rounded-lg border border-slate-600 text-slate-200 text-sm font-semibold hover:border-slate-500 hover:bg-slate-700 transition-colors"
