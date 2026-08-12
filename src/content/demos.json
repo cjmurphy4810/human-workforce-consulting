@@ -93,5 +93,17 @@
     "status": "live",
     "category": "Risk",
     "screenshot_url": "/images/demo-screenshots/pbl-evaluator.png"
+  },
+  {
+    "id": "job-search-dashboard",
+    "name": "Job Search Dashboard",
+    "tagline": "Turn job-application emails into a clear status view.",
+    "description": "Interactive demonstration of a local-first job search tracker. Explore 50 recent application records by company, role, date, and status. The retail product guides job seekers through building their own private local dashboard with Codex or Claude.",
+    "live_url": "https://human-workforce-job-search-demo.fly.dev",
+    "github_url": "https://human-workforce-job-search-demo.fly.dev",
+    "tech_stack": ["HTML", "JavaScript", "Local-first", "Fly.io"],
+    "status": "live",
+    "category": "Workforce",
+    "screenshot_url": "/images/demo-screenshots/job-search-dashboard.png"
   }
 ]

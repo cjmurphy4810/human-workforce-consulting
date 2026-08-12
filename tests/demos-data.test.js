@@ -1,0 +1,2 @@
+const test=require('node:test'); const assert=require('node:assert/strict'); const data=require('../src/content/demos.json');
+test('job search demo is a live Workforce Fly card',()=>{const demo=data.find(d=>d.id==='job-search-dashboard');assert.ok(demo);assert.equal(demo.status,'live');assert.equal(demo.category,'Workforce');assert.match(demo.live_url,/^https:\/\/human-workforce-job-search-demo\.fly\.dev\/?$/);assert.equal(demo.screenshot_url,'/images/demo-screenshots/job-search-dashboard.png')});
