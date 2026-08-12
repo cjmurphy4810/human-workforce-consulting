@@ -100,6 +100,7 @@
     "tagline": "Turn job-application emails into a clear status view.",
     "description": "Interactive demonstration of a local-first job search tracker. Explore 50 recent application records by company, role, date, and status. The retail product guides job seekers through building their own private local dashboard with Codex or Claude.",
     "live_url": "https://human-workforce-job-search-demo.fly.dev",
+    "download_url": "https://human-workforce-job-search-demo.fly.dev/downloads/HumanWorkforce-Job-Search-Dashboard-Free-Kit.zip",
     "github_url": "https://human-workforce-job-search-demo.fly.dev",
     "tech_stack": ["HTML", "JavaScript", "Local-first", "Fly.io"],
     "status": "live",

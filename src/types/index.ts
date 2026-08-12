@@ -9,6 +9,7 @@ export interface Demo {
   status: 'live' | 'beta' | 'coming_soon'
   category: string
   screenshot_url?: string
+  download_url?: string
 }
 
 export interface Expert {

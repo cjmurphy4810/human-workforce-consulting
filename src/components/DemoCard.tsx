@@ -63,6 +63,25 @@ export default function DemoCard({ demo }: DemoCardProps) {
         >
           Call for Demo
         </a>
+      ) : demo.download_url ? (
+        <div className="grid gap-2 sm:grid-cols-2">
+          <a
+            href={demo.live_url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center gap-2 w-full min-h-11 px-3 py-2.5 rounded-lg bg-white text-slate-950 text-sm font-semibold hover:bg-slate-100 transition-colors"
+          >
+            View Demo
+            <ExternalLink size={14} />
+          </a>
+          <a
+            href={demo.download_url}
+            download
+            className="flex items-center justify-center gap-2 w-full min-h-11 px-3 py-2.5 rounded-lg border border-emerald-700 text-emerald-300 text-center text-sm font-semibold hover:bg-emerald-950 transition-colors"
+          >
+            Download Install Files and Instructions
+          </a>
+        </div>
       ) : (
         <a
           href={demo.live_url}
