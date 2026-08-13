@@ -103,7 +103,7 @@
     "github_url": "https://flightwatch-demo-thwf.fly.dev",
     "tech_stack": ["HTML", "JavaScript", "Stateless demo", "Fly.io"],
     "status": "live",
-    "category": "Workforce"
+    "category": "Personal"
   },
   {
     "id": "job-search-dashboard",
@@ -115,7 +115,7 @@
     "github_url": "https://human-workforce-job-search-demo.fly.dev",
     "tech_stack": ["HTML", "JavaScript", "Local-first", "Fly.io"],
     "status": "live",
-    "category": "Workforce",
+    "category": "Personal",
     "screenshot_url": "/images/demo-screenshots/job-search-dashboard.png"
   }
 ]
