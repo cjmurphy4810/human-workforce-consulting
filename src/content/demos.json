@@ -95,6 +95,17 @@
     "screenshot_url": "/images/demo-screenshots/pbl-evaluator.png"
   },
   {
+    "id": "flightwatch",
+    "name": "FlightWatch Virtual Travel Agent",
+    "tagline": "See the route combination worth watching—not just another fare list.",
+    "description": "Guided product simulator showing how FlightWatch turns a flexible Europe brief into cabin-aware, open-jaw flight recommendations and an actionable fare email. Uses fixed fictional sample data, makes no live API calls, and collects no personal data.",
+    "live_url": "https://flightwatch-demo-thwf.fly.dev",
+    "github_url": "https://flightwatch-demo-thwf.fly.dev",
+    "tech_stack": ["HTML", "JavaScript", "Stateless demo", "Fly.io"],
+    "status": "live",
+    "category": "Workforce"
+  },
+  {
     "id": "job-search-dashboard",
     "name": "Job Search Dashboard",
     "tagline": "Turn job-application emails into a clear status view.",
