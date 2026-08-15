@@ -36,6 +36,17 @@
     "screenshot_url": "/images/demo-screenshots/hwa.png"
   },
   {
+    "id": "ai-engineering-genius",
+    "name": "AI Engineering Genius",
+    "tagline": "Explore six months of channel intelligence without connecting an account.",
+    "description": "Public interactive demonstration of a consulting-built YouTube analytics workspace using fully synthetic data. Explore growth, qualifying watch hours, organic momentum, promotion planning, content intelligence, and format comparisons.",
+    "live_url": "https://ai-engineering-genius-demo.fly.dev",
+    "github_url": "https://ai-engineering-genius-demo.fly.dev",
+    "tech_stack": ["Python", "Streamlit", "Synthetic data", "Fly.io"],
+    "status": "live",
+    "category": "Workforce"
+  },
+  {
     "id": "cmdb",
     "name": "CMDB Risk Dashboard",
     "tagline": "Know which data center outage will actually hurt before it happens.",
