@@ -72,14 +72,14 @@
   },
   {
     "id": "laymans",
-    "name": "Layman's Spending Assessment",
-    "tagline": "Plain-English answers to 'where is my money going?'",
-    "description": "Local Streamlit app that ingests RocketMoney CSV exports and provides an AI-powered spending dashboard with Claude chat. Distributed as a zip — no cloud dependency, no data leaves your machine.",
-    "live_url": "https://github.com/cjmurphy4810/laymans-spending-assessment",
-    "github_url": "https://github.com/cjmurphy4810/laymans-spending-assessment",
-    "tech_stack": ["Python", "Streamlit", "Claude API", "SQLite"],
-    "status": "beta",
-    "category": "Finance",
+    "name": "M-VARA — My Virtual Accountant Research Assistant",
+    "tagline": "Turn a Rocket Money export into answers you can act on.",
+    "description": "Explore how M-VARA surfaces spending shifts, recurring drains, transaction evidence, and cash-runway questions from a pseudonymized Rocket Money dataset—without exposing private account details.",
+    "live_url": "https://m-vara-demo-thwf.fly.dev",
+    "github_url": "https://m-vara-demo-thwf.fly.dev",
+    "tech_stack": ["Python", "Streamlit", "Pseudonymized data", "Fly.io"],
+    "status": "live",
+    "category": "Personal",
     "screenshot_url": "/images/demo-screenshots/laymans.png"
   },
   {
