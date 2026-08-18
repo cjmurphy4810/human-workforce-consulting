@@ -73,15 +73,16 @@ export default function DemoCard({ demo }: DemoCardProps) {
             rel="noopener noreferrer"
             className="flex items-center justify-center gap-2 w-full min-h-11 px-3 py-2.5 rounded-lg bg-white text-slate-950 text-sm font-semibold hover:bg-slate-100 transition-colors"
           >
-            View Demo
+            {demo.live_label || 'View Demo'}
             <ExternalLink size={14} />
           </a>
           <a
             href={demo.download_url}
-            download
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex items-center justify-center gap-2 w-full min-h-11 px-3 py-2.5 rounded-lg border border-emerald-700 text-emerald-300 text-center text-sm font-semibold hover:bg-emerald-950 transition-colors"
           >
-            Download Install Files and Instructions
+            {demo.download_label || 'Download Install Files and Instructions'}
           </a>
         </div>
       ) : (

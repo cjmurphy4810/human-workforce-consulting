@@ -117,5 +117,20 @@
     "status": "live",
     "category": "Personal",
     "screenshot_url": "/images/demo-screenshots/job-search-dashboard.png"
+  },
+  {
+    "id": "travel-monitor-tool",
+    "name": "Travel Monitor Tool (TMT)",
+    "tagline": "Your itinerary, alerts, and trip costs - without another subscription.",
+    "description": "Tired of paying for subscriptions like TripIt? Build your own travel monitor with Claude Code or Codex, then modify features such as tracking the total cost of a trip as you book it and while you travel. Download the free guide and make the tool your own.",
+    "live_url": "/images/demo-screenshots/travel-monitor-tool.png",
+    "download_url": "https://drive.google.com/file/d/1bPOu9N9NDvwqw-ol8dTMqFvfO4Jcdod4/view?usp=drive_link",
+    "github_url": "",
+    "tech_stack": ["Claude Code", "Codex", "Email ingestion", "Local or Fly.io"],
+    "status": "live",
+    "category": "Personal",
+    "screenshot_url": "/images/demo-screenshots/travel-monitor-tool.png",
+    "live_label": "View screenshot",
+    "download_label": "Read free build guide"
   }
 ]

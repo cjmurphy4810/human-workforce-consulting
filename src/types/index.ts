@@ -10,6 +10,8 @@ export interface Demo {
   category: string
   screenshot_url?: string
   download_url?: string
+  live_label?: string
+  download_label?: string
 }
 
 export interface Expert {
