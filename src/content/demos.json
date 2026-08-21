@@ -119,6 +119,18 @@
     "screenshot_url": "/images/demo-screenshots/job-search-dashboard.png"
   },
   {
+    "id": "parliamo-in-italia",
+    "name": "Parliamo in Italia",
+    "tagline": "Practice the Italian travel phrases you'll actually need.",
+    "description": "Italian-first question and anticipated-response flash cards with spoken audio, dictionary-referenced IPA, English flip sides, progress tracking, and browser-local custom phrases. Public and ready to use without an account or password.",
+    "live_url": "https://parliamo-in-italia.fly.dev",
+    "github_url": "https://parliamo-in-italia.fly.dev",
+    "tech_stack": ["Python", "Flask", "JavaScript", "PWA", "Fly.io"],
+    "status": "live",
+    "category": "Personal",
+    "screenshot_url": "/images/demo-screenshots/parliamo-in-italia.png"
+  },
+  {
     "id": "travel-monitor-tool",
     "name": "Travel Monitor Tool (TMT)",
     "tagline": "Your itinerary, alerts, and trip costs - without another subscription.",
