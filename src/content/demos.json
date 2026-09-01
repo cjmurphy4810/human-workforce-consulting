@@ -168,5 +168,17 @@
     "tech_stack": ["Jira", "Human–AI collaboration", "Codex", "Cost comparison"],
     "status": "live",
     "category": "Workforce"
+  },
+  {
+    "id": "prestovideo-chatgpt-jira-build",
+    "name": "ChatGPT Browser-Driven Jira Build",
+    "tagline": "Watch a human direct ChatGPT as it builds a Jira dashboard through Chrome.",
+    "description": "A human provides the objective, prompts, and approvals while ChatGPT uses browser-control capabilities through Chrome to operate Jira’s visible interface. This demonstration shows the collaboration creating and modifying a dashboard, arranging its layout, and adding or configuring Jira gadgets while the human observes and directs the work.",
+    "live_url": "/videos/demos/prestovideo-chatgpt-jira-dashboard.mp4",
+    "live_label": "Watch Video Demo",
+    "github_url": "",
+    "tech_stack": ["ChatGPT", "Chrome browser control", "Jira", "Human-directed automation"],
+    "status": "live",
+    "category": "Workforce"
   }
 ]

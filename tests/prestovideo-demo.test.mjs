@@ -36,6 +36,25 @@ test('PrestoVideo Jira project record explains the human and Codex build history
   assert.deepEqual(demo.tech_stack, ['Jira', 'Human–AI collaboration', 'Codex', 'Cost comparison'])
 })
 
+test('ChatGPT Jira browser build is the third PrestoVideo demo and opens the hosted video', () => {
+  const demo = demos.find((item) => item.id === 'prestovideo-chatgpt-jira-build')
+  const sequence = demos.filter((item) => item.id.startsWith('prestovideo')).map((item) => item.id)
+
+  assert.ok(demo)
+  assert.deepEqual(sequence, ['prestovideo', 'prestovideo-jira-project', 'prestovideo-chatgpt-jira-build'])
+  assert.equal(demo.name, 'ChatGPT Browser-Driven Jira Build')
+  assert.equal(demo.status, 'live')
+  assert.equal(demo.category, 'Workforce')
+  assert.equal(demo.live_url, '/videos/demos/prestovideo-chatgpt-jira-dashboard.mp4')
+  assert.equal(demo.live_label, 'Watch Video Demo')
+  assert.equal(demo.github_url, '')
+  assert.equal('screenshot_url' in demo, false)
+  assert.match(demo.description, /human provides the objective, prompts, and approvals/i)
+  assert.match(demo.description, /browser-control capabilities through Chrome/i)
+  assert.match(demo.description, /Jira gadgets/i)
+  assert.deepEqual(demo.tech_stack, ['ChatGPT', 'Chrome browser control', 'Jira', 'Human-directed automation'])
+})
+
 test('text-only live demo cards render their configured action label', () => {
   const source = readFileSync(new URL('../src/components/DemoCard.tsx', import.meta.url), 'utf8')
 
