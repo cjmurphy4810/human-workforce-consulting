@@ -144,5 +144,17 @@
     "screenshot_url": "/images/demo-screenshots/travel-monitor-tool.png",
     "live_label": "View screenshot",
     "download_label": "Read free build guide"
+  },
+  {
+    "id": "prestovideo",
+    "name": "PrestoVideo",
+    "tagline": "Review a professionally produced social video before you pay.",
+    "description": "A live, human-in-the-loop social-video ordering and fulfillment tool created with GPT-supported product design and software development. Choose a 30- or 60-second video, narration voice, and visual style; submit a brief; review the finished video; and pay only if you want it.",
+    "live_url": "https://prestovideo-thwf.fly.dev",
+    "live_label": "Open PrestoVideo",
+    "github_url": "",
+    "tech_stack": ["GPT-assisted build", "Next.js", "Supabase", "Stripe", "Fly.io"],
+    "status": "live",
+    "category": "Workforce"
   }
 ]
