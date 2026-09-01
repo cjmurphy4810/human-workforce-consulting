@@ -156,5 +156,17 @@
     "tech_stack": ["GPT-assisted build", "Next.js", "Supabase", "Stripe", "Fly.io"],
     "status": "live",
     "category": "Workforce"
+  },
+  {
+    "id": "prestovideo-jira-project",
+    "name": "PrestoVideo Jira Project Record",
+    "tagline": "See how human direction and Codex-supported development became a working service.",
+    "description": "This public Jira project was created from the exported tasks and human–Codex dialogue used to build the PrestoVideo service application. It distinguishes human decisions and approvals from Codex-supported implementation, and presents an estimated comparison of the time and cost that equivalent human-only development may have required. Estimates are illustrative, not an audited invoice.",
+    "live_url": "https://zdjimas.atlassian.net/jira/dashboards/10101",
+    "live_label": "View Jira Project Record",
+    "github_url": "",
+    "tech_stack": ["Jira", "Human–AI collaboration", "Codex", "Cost comparison"],
+    "status": "live",
+    "category": "Workforce"
   }
 ]

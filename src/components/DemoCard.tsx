@@ -92,7 +92,7 @@ export default function DemoCard({ demo }: DemoCardProps) {
           rel="noopener noreferrer"
           className="flex items-center justify-center gap-2 w-full py-2.5 rounded-lg bg-white text-slate-950 text-sm font-semibold hover:bg-slate-100 transition-colors"
         >
-          Open Demo
+          {demo.live_label || 'Open Demo'}
           <ExternalLink size={14} />
         </a>
       )}
